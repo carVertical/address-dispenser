@@ -34,6 +34,7 @@ resources:
   Resources:
     IdStore:
       Type: AWS::DynamoDB::Table
+      DeletionPolicy: Retain
       Properties:
         TableName: ${self:service}-${self:provider.stage}-IdStore
         AttributeDefinitions:
@@ -47,6 +48,7 @@ resources:
           WriteCapacityUnits: 1
     AddressStore:
       Type: AWS::DynamoDB::Table
+      DeletionPolicy: Retain
       Properties:
         TableName: ${self:service}-${self:provider.stage}-AddressStore
         AttributeDefinitions:
