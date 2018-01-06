@@ -1,0 +1,10 @@
+### OSX ###
+.DS_Store
+
+### Serverless ###
+# Ignore build directory
+.serverless
+custom.yml
+
+### Node ###
+node_modules/

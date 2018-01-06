@@ -1,0 +1,8 @@
+GetBTCAddress:
+  handler: src/index.GetBTCAddress
+
+GetLTCAddress:
+  handler: src/index.GetLTCAddress
+
+setup:
+  handler: src/index.setup

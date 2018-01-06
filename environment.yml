@@ -1,0 +1,8 @@
+custom: ${file(./custom.yml):custom}
+
+environment:
+  AWS_ACCOUNT_ID: ${self:custom.aws_acc_id}
+  SLS_STAGE: ${self:custom.stage}
+  SERVICE_NAME: ${self:service}
+  BTC_XPUB: ${self:custom.btc_xpub}
+  LTC_XPUB: ${self:custom.ltc_xpub}
